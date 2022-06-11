@@ -127,7 +127,7 @@ public class PlexRefresherFX extends Application {
         mainWindowStage.hide();
         new Thread(() -> {
             try {
-                showSystemNotification("Plex Discord Rich Presence", "The application was minimized to tray. Open or exit the application via the tray icon.");
+                showSystemNotification("Plex Discord RPC", "The application was minimized to system tray. Open or exit the application via the system tray icon.");
             } catch (IOException e) {
                 LOG.error("Error showing system notification " + e.getMessage());
             }
